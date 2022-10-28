@@ -1,15 +1,15 @@
 <template>
 	<div class="food-categories py-10 bg-white flex justify-center items-center h-full">
 		<div class="container">
-			<div class="food-box bg-white rounded-primary p-6">
+			<!-- <div class="food-box bg-white rounded-primary p-6">
 				<section-header>
-					<template #title>Popular Categories</template>
-					<template #subtitle> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ducimus! </template>
+					<template #title>Popular Packages</template>
+					<template #subtitle>You can choose which you want to do with your love! </template>
 				</section-header>
 				<div class="mt-5" v-if="categories.length">
 					<category-slider :categories="categories"></category-slider>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </template>

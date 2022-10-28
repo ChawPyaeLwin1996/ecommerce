@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\Facades\ConfigHelper;
 use App\Http\Resources\ApiResource;
 use App\Http\Controllers\Controller;
+use App\Models\Packages;
 
 class ConfigController extends Controller
 {
@@ -23,6 +24,7 @@ class ConfigController extends Controller
             'categories'      => Category::all(),
             'enums'           => ConfigHelper::getEnums(),
             'options'         => ConfigHelper::getOptions(),
+            'packages'        => Packages::all(),
             'featureProducts' => Product::with('unit', 'category')->withCount('orderItems')->orderBy('order_items_count', 'desc')->take(8)->get(),
             'orderStatus'     => OrderStatus::toSelectOptions([OrderStatus::DELIVERED()])
         ];

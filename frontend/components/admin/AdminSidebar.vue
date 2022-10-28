@@ -4,7 +4,7 @@
 		<nuxt-link to="/admin" class="flex items-center justify-center px-5 h-20">
 			<Logo class="block h-10 w-10" />
 			<div class="ml-4 flex-grow" :class="{'lg:hidden' : collapsed}">
-				<h6 class="text-lg font-bold">Wecommerce</h6>
+				<h6 class="text-lg font-bold">EOL</h6>
 				<span class="block text-xs tracking-wide">Admin Dashboard</span>
 			</div>
 		</nuxt-link>

@@ -1,0 +1,4 @@
+
+package list =>proposee, sign,choose clothes,choose hair style and makeup-artist,choose shoe,court,date,photgrapher,choose photoshot place,price,discount
+package-table ,id,pname,amount(from~to)
+clothes-table,id,c-name,type(myanmar(or)foreign),	

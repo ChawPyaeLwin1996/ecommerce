@@ -13,6 +13,7 @@ use App\Http\Controllers\Api\Admin\DeliveryController;
 use App\Http\Controllers\Api\Admin\ResetPasswordController;
 use App\Http\Controllers\Api\Admin\ForgotPasswordController;
 use App\Http\Controllers\Api\Admin\NotificationController;
+use App\Http\Controllers\PackagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,4 +56,6 @@ Route::prefix('admin')->group(function () {
     Route::post('/notifications/{id}', [NotificationController::class, 'markAsRead']);
     Route::post('/notifications', [NotificationController::class, 'markAllAsRead']);
     Route::delete('/notifications', [NotificationController::class, 'clearAll']);
+
+    Route::get('/packages', [PackagesController::class, 'index']);
 });

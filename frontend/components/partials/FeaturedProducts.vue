@@ -3,11 +3,10 @@
 		<div class="container">
 			<section-header>
 				<template #title>
-					Featured Products
+					Featured Packages
 				</template>
 				<template #subtitle>
-					Completely network impactful users whereas next-generation
-					applications.
+					You can choose which you want to do with your love!
 				</template>
 			</section-header>
 			<div class="grid xs:grid-cols-2 lg:grid-cols-4 gap-7 mt-10">

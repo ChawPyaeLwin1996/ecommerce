@@ -17,15 +17,29 @@
 				<div class="" v-for="(blog, index) in blogs" :key="index">
 					<blog-card :blog="blog"></blog-card>
 				</div>
-			</div>
+			</div>			
+			<p>{{package_data}}</p>
 		</div>
 	</div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
+	computed: {
+		...mapGetters({
+			packages: "global/getPackages",
+		}),
+	},
+	methods: {
+		async fetchFeatures() {
+			console.log("packages............",packages);
+			this.package_data = await this.$axios.$get("/packages");
+		}
+	},
 	data() {
 		return {
+			package_data:[],
 			blogs: [
 				{
 					title: "Pure is the most healthy and most nourishing food",
