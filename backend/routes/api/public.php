@@ -6,6 +6,8 @@ use App\Http\Controllers\Api\AjaxController;
 use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\Api\ConfigController;
 use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\PackagesController;
+use App\Http\Controllers\Api\PlaceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +24,5 @@ use App\Http\Controllers\Api\ProductController;
 Route::get('/config', ConfigController::class);
 Route::resource('products', ProductController::class)->only('index', 'show');
 Route::post('/customers/check', [AjaxController::class, 'checkCustomer']);
+Route::get('/packages', [PackagesController::class, 'index']);
+Route::get('/place', [PlaceController::class, 'index']);

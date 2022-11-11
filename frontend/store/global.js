@@ -6,6 +6,7 @@ export const state = () => ({
   options: null,
   featureProducts: null,
   packages: null,
+  place: null,
   orderStatus: [],
 });
 
@@ -22,6 +23,9 @@ export const getters = {
   },
   getPackages(state) {
     return state.packages;
+  },
+  getPlace(state) {
+    return state.place;
   },
   getCategories(state) {
     return state.categories;
@@ -49,6 +53,7 @@ export const mutations = {
     state.options = config.options;
     state.featureProducts = config.featureProducts;
     state.packages = config.packages;
+    state.place = config.place;
     state.orderStatus = config.orderStatus;
   },
 };

@@ -11,6 +11,7 @@ use App\Facades\ConfigHelper;
 use App\Http\Resources\ApiResource;
 use App\Http\Controllers\Controller;
 use App\Models\Packages;
+use App\Models\Place;
 
 class ConfigController extends Controller
 {
@@ -25,6 +26,7 @@ class ConfigController extends Controller
             'enums'           => ConfigHelper::getEnums(),
             'options'         => ConfigHelper::getOptions(),
             'packages'        => Packages::all(),
+            'place'           => Place::all(),
             'featureProducts' => Product::with('unit', 'category')->withCount('orderItems')->orderBy('order_items_count', 'desc')->take(8)->get(),
             'orderStatus'     => OrderStatus::toSelectOptions([OrderStatus::DELIVERED()])
         ];

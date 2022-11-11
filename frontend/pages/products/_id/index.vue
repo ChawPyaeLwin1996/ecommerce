@@ -19,7 +19,7 @@
 
 						<!-- price -->
 						<div class="mt-2 font-bold text-2xl">
-							<span class="text-primary-500">{{product.priceFormatted}}</span>
+							<span class="text-primary-500">{{product.biggestAmount}}</span>
 						</div>
 
 						<!-- quantity and add to cart button  -->

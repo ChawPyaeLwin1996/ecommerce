@@ -10,7 +10,7 @@
 				</template>
 			</section-header>
 			<div class="grid xs:grid-cols-2 lg:grid-cols-4 gap-7 mt-10">
-				<product-card v-for="(product, index) in products" :key="index" :product="product"></product-card>
+				<product-card v-for="(product, index) in packages" :key="index" :product="product"></product-card>
 			</div>
 		</div>
 	</div>
@@ -21,7 +21,7 @@ import { mapGetters } from "vuex";
 export default {
 	computed: {
 		...mapGetters({
-			products: "global/getFeatureProducts",
+			packages: "global/getPackages",
 		}),
 	},
 };

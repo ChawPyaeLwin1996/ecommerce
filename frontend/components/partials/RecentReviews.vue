@@ -24,21 +24,18 @@ export default {
 		return {
 			reviews: [
 				{
-					name: "Motasim Fuad",
-					review: " Extend Accurate Services Long Term High Impact Experiences Interactiv Streamline Team Compelingly Simplify Solutions Before Technicaly Sound Leadership Skills Creative Holstic Process Improvements Proactively Streamline Alternative Niche Markets Forwor Resource Conveniently cultivate pandemic technology and corporate.",
-					profilePhotoUrl: "/images/users/user-02.png",
+					name: "Mr.Smith and Ms.Rose",
+					review: "They make me happy and statisfy ! So Cool!",
 				},
 				{
 					name: "Naveed Ali",
 					profession: "Profession",
-					review: " Extend Accurate Services Long Term High Impact Experiences Interactiv Streamline Team Compelingly Simplify Solutions Before Technicaly Sound Leadership Skills Creative Holstic Process Improvements Proactively Streamline Alternative Niche Markets Forwor Resource Conveniently cultivate pandemic technology and corporate.",
-					profilePhotoUrl: "/images/users/user-03.png",
+					review: "They make me happy and statisfy ! So Cool!",
 				},
 				{
 					name: "Irfan Khan",
 					profession: "Profession",
-					review: " Extend Accurate Services Long Term High Impact Experiences Interactiv Streamline Team Compelingly Simplify Solutions Before Technicaly Sound Leadership Skills Creative Holstic Process Improvements Proactively Streamline Alternative Niche Markets Forwor Resource Conveniently cultivate pandemic technology and corporate.",
-					profilePhotoUrl: "/images/users/user-04.png",
+					review: "They make me happy and statisfy ! So Cool!",
 				},
 			],
 		};

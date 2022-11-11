@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Packages extends Model
 {
-    use SoftDeletes, Filterable, Trashed;
+    use Filterable;
 
     /**
      * The attributes that are mass assignable.

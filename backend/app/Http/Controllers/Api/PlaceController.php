@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Api; 
 
-use App\Models\Packages;
+use App\Models\Place;
 use App\Http\Controllers\Controller;
 
-class PackagesController extends Controller
+class PlaceController extends Controller
 {
         /**
      * Display a listing of the resource.
@@ -14,9 +14,7 @@ class PackagesController extends Controller
      */
     public function index()
     {
-        $packages = Packages::all();   
-        return $packages;
+        $place = Place::all();   
+        return $place;
     }
-
-
 }
