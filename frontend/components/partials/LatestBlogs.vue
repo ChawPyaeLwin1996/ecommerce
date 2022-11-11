@@ -33,9 +33,8 @@ export default {
 	},
 	methods: {
 		async fetchFeatures() {
-			console.log("packages............",packages);
-			this.package_data = await this.$axios.$get("/packages");
-		}
+			this.package_data = await this.$axios.$get(`/packages`);
+		},
 	},
 	data() {
 		return {
